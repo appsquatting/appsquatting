@@ -2,7 +2,7 @@
 
 Domain squatting, a well-known adversarial tactic that attackersregister domain names that are purposefully similar to popular do-mains, had been observed and studied for decades. Recent studiessuggested that squatting-like attacks have been penetrated to various problem spaces. We demonstrates that squattingbehaviors are also prevalent in the mobile app ecosystem with adifferent manner, which we called “App Squatting”. Specifically,attackers may release app with identifiers (e.g., app name, pack-age name or developer name) that are confusingly similar to thosebelonging to popular apps or large Internet brands. 
 
-We summarize 11 deformation models for app squatting. In particular, we propose and implement a tool named “AppCrazy”, which is capable of automatically generating variations of app identifiers, to facilitateour analyses.
+We summarize 11 deformation models for app squatting. In particular, we propose and implement a tool named “AppCrazy”, which is capable of automatically generating variations of app identifiers.
 
 Squatting-generation Models:
 
@@ -32,7 +32,7 @@ Squatting-generation Models:
     (2) String Rearrangement: Split the string into elements based on character dot, and rearrangement the elements, e.g., “com.facebook.katana” into “com.katana.facebook”. Specifically, rearranged strings that are composed of commonnames in Android will be discarded. e.g., “com.android”, “com.google”, “com.game”
 
 
-3、Result File.
+Result File.
 
     (1)fake_app.xlsx: Fake apps collected by leveraging AppCrazy to 500 popular apps in Google Play.
     (2)squatting_app.xlsx: Squatting apps collected by leveraging AppCrazy to 500 popular apps in Google Play.
